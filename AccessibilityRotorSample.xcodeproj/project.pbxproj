@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1EDA4293262B053D00A43618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA4292262B053D00A43618 /* AppDelegate.swift */; };
 		1EDA4295262B053D00A43618 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA4294262B053D00A43618 /* SceneDelegate.swift */; };
-		1EDA4297262B053D00A43618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA4296262B053D00A43618 /* ViewController.swift */; };
 		1EDA429A262B053D00A43618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA4298262B053D00A43618 /* Main.storyboard */; };
 		1EDA429C262B053E00A43618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA429B262B053E00A43618 /* Assets.xcassets */; };
 		1EDA429F262B053E00A43618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA429D262B053E00A43618 /* LaunchScreen.storyboard */; };
+		1EDA42AB262B054F00A43618 /* TableControllerWithRotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA42A7262B054F00A43618 /* TableControllerWithRotor.swift */; };
+		1EDA42AC262B054F00A43618 /* UITableView+SectionRotor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA42A8262B054F00A43618 /* UITableView+SectionRotor.swift */; };
+		1EDA42AD262B054F00A43618 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA42A9262B054F00A43618 /* TableViewController.swift */; };
+		1EDA42AE262B054F00A43618 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA42AA262B054F00A43618 /* Product.swift */; };
+		1EDA42B9262B067300A43618 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA42B8262B067300A43618 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EDA428F262B053D00A43618 /* AccessibilityRotorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityRotorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDA4292262B053D00A43618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EDA4294262B053D00A43618 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EDA4296262B053D00A43618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EDA4299262B053D00A43618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EDA429B262B053E00A43618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EDA429E262B053E00A43618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EDA42A0262B053E00A43618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EDA42A7262B054F00A43618 /* TableControllerWithRotor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableControllerWithRotor.swift; sourceTree = "<group>"; };
+		1EDA42A8262B054F00A43618 /* UITableView+SectionRotor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+SectionRotor.swift"; sourceTree = "<group>"; };
+		1EDA42A9262B054F00A43618 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1EDA42AA262B054F00A43618 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1EDA42B8262B067300A43618 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				1EDA4292262B053D00A43618 /* AppDelegate.swift */,
+				1EDA42B8262B067300A43618 /* Readme.md */,
 				1EDA4294262B053D00A43618 /* SceneDelegate.swift */,
-				1EDA4296262B053D00A43618 /* ViewController.swift */,
+				1EDA42B0262B055500A43618 /* Rotor */,
 				1EDA4298262B053D00A43618 /* Main.storyboard */,
 				1EDA429B262B053E00A43618 /* Assets.xcassets */,
 				1EDA429D262B053E00A43618 /* LaunchScreen.storyboard */,
 				1EDA42A0262B053E00A43618 /* Info.plist */,
 			);
 			path = AccessibilityRotorSample;
+			sourceTree = "<group>";
+		};
+		1EDA42B0262B055500A43618 /* Rotor */ = {
+			isa = PBXGroup;
+			children = (
+				1EDA42AA262B054F00A43618 /* Product.swift */,
+				1EDA42A7262B054F00A43618 /* TableControllerWithRotor.swift */,
+				1EDA42A9262B054F00A43618 /* TableViewController.swift */,
+				1EDA42A8262B054F00A43618 /* UITableView+SectionRotor.swift */,
+			);
+			path = Rotor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +146,7 @@
 			files = (
 				1EDA429F262B053E00A43618 /* LaunchScreen.storyboard in Resources */,
 				1EDA429C262B053E00A43618 /* Assets.xcassets in Resources */,
+				1EDA42B9262B067300A43618 /* Readme.md in Resources */,
 				1EDA429A262B053D00A43618 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EDA4297262B053D00A43618 /* ViewController.swift in Sources */,
+				1EDA42AD262B054F00A43618 /* TableViewController.swift in Sources */,
 				1EDA4293262B053D00A43618 /* AppDelegate.swift in Sources */,
+				1EDA42AC262B054F00A43618 /* UITableView+SectionRotor.swift in Sources */,
 				1EDA4295262B053D00A43618 /* SceneDelegate.swift in Sources */,
+				1EDA42AB262B054F00A43618 /* TableControllerWithRotor.swift in Sources */,
+				1EDA42AE262B054F00A43618 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,13 +311,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AccessibilityRotorSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PrepStation.AccessibilityRotorSample;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rubanov.AccessibilityRotorSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +330,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AccessibilityRotorSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PrepStation.AccessibilityRotorSample;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rubanov.AccessibilityRotorSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
